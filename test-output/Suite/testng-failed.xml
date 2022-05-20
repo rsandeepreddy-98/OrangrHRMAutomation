@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.OrangeHRM.Utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginCheck"/>
+          <include name="dataProvideLoginCheck" invocation-numbers="1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
