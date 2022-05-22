@@ -4,16 +4,14 @@
   <listeners>
     <listener class-name="com.OrangeHRM.Utilities.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="LoginCheckTest(failed)">
     <classes>
       <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
         <methods>
-          <include name="teardown"/>
-          <include name="loginCheck"/>
-          <include name="dataProvideLoginCheck" invocation-numbers="1 2"/>
+          <include name="checkEmployeeStatus"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- LoginCheckTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

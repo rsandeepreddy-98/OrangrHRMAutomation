@@ -16,10 +16,10 @@ import com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM;
 
 public class PersonalDetailsPage {
 	private static Logger logger = LogManager.getLogger(TC_0001_LoginCheckHRM.class);
-	
-	 WebDriver driver;
-	 Select select;
-	 JavascriptExecutor javascriptExecutor;
+
+	WebDriver driver;
+	Select select;
+	JavascriptExecutor javascriptExecutor;
 	public PersonalDetailsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -31,10 +31,10 @@ public class PersonalDetailsPage {
 
 	@FindBy(xpath = "//input[@id='personal_optGender_1']")
 	WebElement genderOptionElement;
-	
+
 	@FindBy(xpath = "//select[@id='personal_cmbNation']")
 	WebElement selctWebElement;
-	
+
 	public void editButton() {
 		editElement.click();
 	}
@@ -51,5 +51,5 @@ public class PersonalDetailsPage {
 		logger.info(totalCount);
 	}
 
-	
+
 }

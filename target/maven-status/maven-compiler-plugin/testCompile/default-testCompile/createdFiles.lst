@@ -1,0 +1,10 @@
+com\OrangeHRM\Utilities\Listeners.class
+com\OrangeHRM\PageObjects\AddEmployeePage.class
+com\OrangeHRM\PageObjects\LoginPage.class
+com\OrangeHRM\Utilities\ExcelReader.class
+com\OrangeHRM\PageObjects\PersonalDetailsPage.class
+com\OrangeHRM\TestCases\TC_002_DataProvider.class
+com\OrangeHRM\TestCases\BaseClass.class
+com\OrangeHRM\Utilities\ReadConfig.class
+com\OrangeHRM\TestCases\TC_0001_LoginCheckHRM.class
+com\OrangeHRM\Utilities\Reporting.class
