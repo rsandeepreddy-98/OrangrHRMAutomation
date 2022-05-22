@@ -1,9 +1,5 @@
 package com.OrangeHRM.TestCases;
 
-import java.util.concurrent.TimeUnit;
-
-import javax.sound.midi.VoiceStatus;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;

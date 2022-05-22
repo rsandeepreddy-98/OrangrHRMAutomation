@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-20T23:59:50 IST" name="Suite" finished-at="2022-05-21T00:00:22 IST" duration-ms="31758">
+    <groups>
+    </groups>
+    <test started-at="2022-05-20T23:59:50 IST" name="Test" finished-at="2022-05-21T00:00:22 IST" duration-ms="31758">
+      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-20T23:59:50 IST" name="setUp" finished-at="2022-05-21T00:00:07 IST" duration-ms="16287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginCheck()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:07 IST" name="loginCheck" finished-at="2022-05-21T00:00:14 IST" duration-ms="7181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCheck -->
+        <test-method signature="addEmployee()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:14 IST" name="addEmployee" finished-at="2022-05-21T00:00:20 IST" depends-on-methods="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM.loginCheck" duration-ms="6227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method signature="personalDetailsPage()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:20 IST" name="personalDetailsPage" finished-at="2022-05-21T00:00:21 IST" depends-on-methods="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM.addEmployee" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalDetailsPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:21 IST" name="teardown" finished-at="2022-05-21T00:00:22 IST" duration-ms="1442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

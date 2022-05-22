@@ -58,5 +58,10 @@ public class ReadConfig {
 		return lname;
 	}
 	
+	public String getGeneralName() {
+		String generalName = properties.getProperty("addName");
+		return generalName;
+	}
+	
 	
 }

@@ -5,9 +5,7 @@
     <classes>
       <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
         <methods>
-          <include name="addEmployee"/>
-          <include name="loginCheck"/>
-          <include name="personalDetailsPage"/>
+          <include name="checkEmployeeStatus"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->

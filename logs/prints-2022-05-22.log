@@ -1,0 +1,6 @@
+19:19:11.383 [main] ERROR com.OrangeHRM.Utilities.Listeners - checkEmployeeStatus
+19:19:58.538 [main] INFO  com.OrangeHRM.Utilities.Listeners - ChromeDriver opened
+19:20:06.096 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
+19:20:06.224 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
+19:20:12.019 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
+19:20:13.969 [main] ERROR com.OrangeHRM.Utilities.Listeners - checkEmployeeStatus
