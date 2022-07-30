@@ -42,7 +42,9 @@ public class ExcelReader {
 			xssfSheet=xssfWorkbook.getSheetAt(i);
 			System.out.println("Sheets are ="+xssfSheet);
 			//xssfSheet.getLastRowNum()
+			//xssfSheet.getRows
 			numberofrows=xssfSheet.getPhysicalNumberOfRows();
+			
 			/*With the above statement */
 			System.out.println("Number of physical rows = "+numberofrows);
 			numberOfCols = xssfSheet.getRow(0).getLastCellNum();

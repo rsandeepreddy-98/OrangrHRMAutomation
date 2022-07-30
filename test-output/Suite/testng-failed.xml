@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="LoginCheckTest(failed)">
     <classes>
-      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
+      <class name="com.OrangeHRM.TestCases.TC_004_PIM_AddEmployee">
         <methods>
-          <include name="checkEmployeeStatus"/>
+          <include name="addEmployee"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
+      </class> <!-- com.OrangeHRM.TestCases.TC_004_PIM_AddEmployee -->
     </classes>
   </test> <!-- LoginCheckTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

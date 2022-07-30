@@ -5,10 +5,11 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.OrangeHRM.PageObjects.AddEmployeePage;
+import com.OrangeHRM.PageObjects.PIMTab_AddEmployee;
 import com.OrangeHRM.PageObjects.AdminTab;
 import com.OrangeHRM.PageObjects.LoginPage;
 import com.OrangeHRM.PageObjects.PersonalDetailsPage;
@@ -22,8 +23,8 @@ public class TC_0001_LoginCheckHRM extends BaseClass {
 	public ReadConfig readConfig = new ReadConfig();
 	public AdminTab adminTab;
 
-	@Test
-	public void loginCheck() {
+	@Test(priority = 1)
+	public void loginPageCheck() {
 
 		loginPage = new LoginPage(driver);
 		loginPage.getUserName(uName);
@@ -35,37 +36,38 @@ public class TC_0001_LoginCheckHRM extends BaseClass {
 
 	}
 
-	@Test(dependsOnMethods = "loginCheck")
-	public void addEmployee() {
-		AddEmployeePage addEmployeePage = new AddEmployeePage(driver);
-		addEmployeePage.getElement();
-		addEmployeePage.addFirstName(readConfig.getFirstName());
-		addEmployeePage.addLastName(readConfig.getLastName());
-		addEmployeePage.clickSaveButton();
-	}
-
-	@Test(dependsOnMethods = "addEmployee")
-	public void personalDetailsPage() {
-		PersonalDetailsPage personalDetailsPage = new PersonalDetailsPage(driver);
-		personalDetailsPage.editButton();
-		personalDetailsPage.genderElement();
-		personalDetailsPage.selectDropDown();
-	}
-
-
-	@Test
-	public void checkEmployeeStatus() {
-		adminTab = new AdminTab(driver);
-		adminTab.getAdminElement();
-		adminTab.getJobElement();
-		adminTab.getEmployeeStatusElement();
-		//adminTab.getaddButtonElement();
-		//adminTab.getnameElement(readConfig.getGeneralName());
-		//adminTab.getSaveButtonElement();
-		adminTab.getcheckboxSelect();
-		adminTab.getDeleteElement();
-	}
-
+	
+	  @Test(priority = 2) 
+	  public void addEmployee() { 
+	  PIMTab_AddEmployee addEmployeePage = new PIMTab_AddEmployee(driver); //
+	  addEmployeePage.getElement(); //
+	  addEmployeePage.addFirstName(readConfig.getFirstName()); //
+	  addEmployeePage.addLastName(readConfig.getLastName()); //
+	  addEmployeePage.clickSaveButton(); 
+	  }
+	 
+//	@Test(dependsOnMethods = "addEmployee")
+//	public void personalDetailsPage() {
+//		PersonalDetailsPage personalDetailsPage = new PersonalDetailsPage(driver);
+//		personalDetailsPage.editButton();
+//		personalDetailsPage.genderElement();
+//		personalDetailsPage.selectDropDown();
+//	}
+//
+//
+//	@Test
+//	public void checkEmployeeStatus() {
+//		adminTab = new AdminTab(driver);
+//		adminTab.getAdminElement();
+//		adminTab.getJobElement();
+//		adminTab.getEmployeeStatusElement();
+//		//adminTab.getaddButtonElement();
+//		//adminTab.getnameElement(readConfig.getGeneralName());
+//		//adminTab.getSaveButtonElement();
+//		adminTab.getcheckboxSelect();
+//		adminTab.getDeleteElement();
+//	}
+//
 
 
 
