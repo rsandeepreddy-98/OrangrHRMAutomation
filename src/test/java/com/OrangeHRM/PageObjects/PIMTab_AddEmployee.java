@@ -6,12 +6,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddEmployeePage {
+public class PIMTab_AddEmployee {
 
 	public WebDriver driver;
 	public Actions actions;
 	
-	public AddEmployeePage(WebDriver driver) {
+	public PIMTab_AddEmployee(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

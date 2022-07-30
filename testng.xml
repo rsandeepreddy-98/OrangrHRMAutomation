@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-<listeners>
-	<listener class-name="com.OrangeHRM.Utilities.Listeners"/>
-</listeners>
-
-  <test  name="LoginCheckTest">
-    <classes>
-    
-      <class  name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
-      <methods>
-      <include name="loginCheck"/>
-	  <include name="checkEmployeeStatus"/>      
-      </methods>
-   </class >
-    </classes>
-  </test> <!-- Test -->
+  <suite-files>
+  <suite-file path="XML/testng.xml"></suite-file>
+  <suite-file path="XML/TC_003testng.xml"></suite-file>
+  
+  </suite-files>
 </suite> <!-- Suite -->

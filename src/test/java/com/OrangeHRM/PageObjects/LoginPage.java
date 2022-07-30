@@ -16,21 +16,19 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//input[@name='txtUsername']")
 	WebElement userName;
-	
-	@FindBy(id = "txtPassword")
-	WebElement password;
-	
-	@FindBy(name = "Submit")
-	WebElement submitButton;
-	
-	//Writing the methods mechanism
 	public void getUserName(String uName) {
 		userName.sendKeys(uName);
 	}
 	
+	@FindBy(id = "txtPassword")
+	WebElement password;
+	
 	public void getPassword(String pwd) {
 		password.sendKeys(pwd);
 	}
+	
+	@FindBy(name = "Submit")
+	WebElement submitButton;
 	
 	public void clickSubmit() {
 		submitButton.click();

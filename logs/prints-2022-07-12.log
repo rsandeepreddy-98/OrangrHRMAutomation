@@ -1,0 +1,6 @@
+16:04:10.525 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
+16:04:10.863 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
+16:04:16.901 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
+16:05:14.669 [main] INFO  com.OrangeHRM.Utilities.Listeners - ChromeDriver opened
+16:05:23.164 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
+16:05:23.266 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
