@@ -1,5 +1,2 @@
-11:20:23.316 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
-11:20:33.789 [main] INFO  com.OrangeHRM.Utilities.Listeners - ChromeDriver opened
-11:20:39.432 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
-11:20:39.546 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
-11:20:43.248 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
+14:32:26.871 [main] INFO  com.OrangeHRM.Utilities.Listeners - Enter password
+14:32:27.104 [main] INFO  com.OrangeHRM.Utilities.Listeners - Clicked on Login Button

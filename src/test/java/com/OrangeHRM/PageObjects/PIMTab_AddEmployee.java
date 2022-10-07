@@ -16,36 +16,30 @@ public class PIMTab_AddEmployee {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id = "menu_pim_viewPimModule")
-	WebElement idElement;
 	
-	@FindBy(id = "menu_pim_addEmployee")
-	WebElement addElement;
+	@FindBy(xpath = "//a[text()='Add Employee']")
+	WebElement addEmployeeButton;
+	public void addEmployeeClick() {
+		addEmployeeButton.click();
+		
+	}
 	
 	//Elements in Addemployee tab
 	@FindBy(xpath = "//input[@name='firstName']")
 	WebElement firstName;
-	
-	@FindBy(id = "lastName")
-	WebElement lastName;
-	
-	//for Save Button
-	@FindBy(xpath = "//input[@value='Save']")
-	WebElement saveButton;
-	
-	//write a mechanism to hover on the element
-	public void getElement() {
-		actions = new Actions(driver);
-		actions.moveToElement(idElement).perform();
-		addElement.click();
-		
-	}
 	public void addFirstName(String fname) {
 		firstName.sendKeys(fname);
 	}
+	
+	@FindBy(xpath = "//input[@name='lastName']")
+	WebElement lastName;
 	public void addLastName(String lname) {
 		lastName.sendKeys(lname);
 	}
+	
+	//for Save Button
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
+	WebElement saveButton;
 	
 	public void clickSaveButton() {
 		saveButton.click();

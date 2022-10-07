@@ -24,68 +24,55 @@ public class AdminTab {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id = "menu_admin_viewAdminModule")
+	
+
+	
+	
+	@FindBy(xpath = "//span[text()='Admin']")
 	WebElement adminElement;
-	
-	@FindBy(xpath = "//a[@id='menu_admin_Job']")
-	WebElement jobElement;
-	
-	@FindBy(xpath = "//a[@id='menu_admin_employmentStatus']")
-	WebElement employeeStatusElement;
-	
-	@FindBy(xpath = "//input[@id='btnAdd']")
-	WebElement addButtonElement;
-	
-	@FindBy(xpath = "//input[@id='empStatus_name']")
-	WebElement nameElement;
-	
-	@FindBy(id = "btnSave")
-	WebElement saveButtonElement;
-	
-	@FindBy(xpath = "//input[@id='ohrmList_chkSelectRecord_9']")
-	WebElement checkselctBoxElement;
-	
-	@FindBy(css = "input.delete")
-	WebElement deleteButtonElement;
-	
-	@FindBy(xpath = "//input[@id='dialogDeleteBtn']")
-	WebElement dialogOkButtonElement;
-	
-	public void getAdminElement() {
-		actions = new Actions(driver);
-		actions.moveToElement(adminElement).build().perform();
+	public void clickAdminElement() {
+		adminElement.click();
 	}
 	
+	@FindBy(xpath = "//li[@class='oxd-topbar-body-nav-tab --parent'][1]")
+	WebElement jobElement;
 	public void getJobElement() {
-		actions = new Actions(driver);
-		actions.moveToElement(jobElement).build().perform();
-	} 
+		jobElement.click();
+	}
+	
+	@FindBy(xpath = "//ul[@class='oxd-dropdown-menu']/child::li[3]")
+	WebElement employeeStatusElement;
 	
 	public void getEmployeeStatusElement() {
 		employeeStatusElement.click();
 	}
 	
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']")
+	WebElement addButtonElement;
 	public void getaddButtonElement() {
 		addButtonElement.click();
 	}
 	
 	
+	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input")
+	WebElement nameElement;
 	public void getnameElement(String addName) {
 		nameElement.sendKeys(addName);
+		
 	}
 	
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
+	WebElement saveButtonElement;
+	    
 	public void getSaveButtonElement() {
 		saveButtonElement.click();
+		
 	}
-	
-	public void getcheckboxSelect() {
-		checkselctBoxElement.click();
-	}
-	
-	public void getDeleteElement() {
-		deleteButtonElement.click();
-		dialogOkButtonElement.click();
-	}
-	
 
+	/*
+	 * public void getcheckboxSelect() { checkselctBoxElement.click(); }
+	 * 
+	 * public void getDeleteElement() { deleteButtonElement.click();
+	 * dialogOkButtonElement.click(); }
+	 */
 }

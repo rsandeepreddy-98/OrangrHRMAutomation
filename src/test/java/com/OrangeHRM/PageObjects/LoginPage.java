@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import com.OrangeHRM.Utilities.DBConnection;
+
+public class LoginPage extends DBConnection{
 
 	public WebDriver driver;
 
@@ -14,24 +16,24 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//input[@name='txtUsername']")
-	WebElement userName;
+	@FindBy(xpath = "//input[@name='username']")
+	WebElement userNameField;
 	public void getUserName(String uName) {
-		userName.sendKeys(uName);
+		userNameField.sendKeys(uName);
 	}
 	
-	@FindBy(id = "txtPassword")
-	WebElement password;
+	@FindBy(xpath = "//input[@name='password']")
+	WebElement passwordField;
 	
 	public void getPassword(String pwd) {
-		password.sendKeys(pwd);
+		passwordField.sendKeys(pwd);
 	}
 	
-	@FindBy(name = "Submit")
-	WebElement submitButton;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
+	WebElement loginButton;
 	
-	public void clickSubmit() {
-		submitButton.click();
+	public void clickLogin() {
+		loginButton.click();
 	}
 }
 

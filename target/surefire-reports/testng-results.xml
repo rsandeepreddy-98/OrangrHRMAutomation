@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-20T23:59:50 IST" name="Suite" finished-at="2022-05-21T00:00:22 IST" duration-ms="31758">
+  <suite started-at="2022-07-30T11:59:20 IST" name="Suite" finished-at="2022-07-30T11:59:20 IST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2022-05-20T23:59:50 IST" name="Test" finished-at="2022-05-21T00:00:22 IST" duration-ms="31758">
-      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-20T23:59:50 IST" name="setUp" finished-at="2022-05-21T00:00:07 IST" duration-ms="16287" status="PASS">
+  </suite> <!-- Suite -->
+  <suite started-at="2022-07-30T11:59:01 IST" name="Suite (1)" finished-at="2022-07-30T11:59:20 IST" duration-ms="18558">
+    <groups>
+    </groups>
+    <test started-at="2022-07-30T11:59:01 IST" name="Test" finished-at="2022-07-30T11:59:20 IST" duration-ms="18558">
+      <class name="com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@72bd06ca]" started-at="2022-07-30T11:59:01 IST" name="setUp" finished-at="2022-07-30T11:59:10 IST" duration-ms="9251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginCheck()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:07 IST" name="loginCheck" finished-at="2022-05-21T00:00:14 IST" duration-ms="7181" status="PASS">
+        <test-method signature="loginPageCheck()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@72bd06ca]" started-at="2022-07-30T11:59:10 IST" name="loginPageCheck" finished-at="2022-07-30T11:59:15 IST" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginCheck -->
-        <test-method signature="addEmployee()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:14 IST" name="addEmployee" finished-at="2022-05-21T00:00:20 IST" depends-on-methods="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM.loginCheck" duration-ms="6227" status="PASS">
+        </test-method> <!-- loginPageCheck -->
+        <test-method signature="checkEmployeeStatus()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@72bd06ca]" started-at="2022-07-30T11:59:15 IST" name="checkEmployeeStatus" finished-at="2022-07-30T11:59:19 IST" duration-ms="4213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmployeeStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@72bd06ca]" started-at="2022-07-30T11:59:19 IST" name="teardown" finished-at="2022-07-30T11:59:20 IST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2022-07-30T11:58:21 IST" name="Suite (0)" finished-at="2022-07-30T11:59:00 IST" duration-ms="38853">
+    <groups>
+    </groups>
+    <test started-at="2022-07-30T11:58:21 IST" name="LoginCheckTest" finished-at="2022-07-30T11:59:00 IST" duration-ms="38853">
+      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@3efe7086]" started-at="2022-07-30T11:58:21 IST" name="setUp" finished-at="2022-07-30T11:58:45 IST" duration-ms="23756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageCheck()[pri:1, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@3efe7086]" started-at="2022-07-30T11:58:45 IST" name="loginPageCheck" finished-at="2022-07-30T11:58:51 IST" duration-ms="5413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageCheck -->
+        <test-method signature="addEmployee()[pri:2, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@3efe7086]" started-at="2022-07-30T11:58:51 IST" name="addEmployee" finished-at="2022-07-30T11:58:59 IST" duration-ms="8139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method signature="personalDetailsPage()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:20 IST" name="personalDetailsPage" finished-at="2022-05-21T00:00:21 IST" depends-on-methods="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM.addEmployee" duration-ms="558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalDetailsPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@6c8bca63]" started-at="2022-05-21T00:00:21 IST" name="teardown" finished-at="2022-05-21T00:00:22 IST" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@3efe7086]" started-at="2022-07-30T11:58:59 IST" name="teardown" finished-at="2022-07-30T11:59:00 IST" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- LoginCheckTest -->
+  </suite> <!-- Suite (0) -->
 </testng-results>

@@ -3,7 +3,8 @@
 <suite name="Suite">
   <suite-files>
   <suite-file path="XML/testng.xml"></suite-file>
-  <suite-file path="XML/TC_003testng.xml"></suite-file>
+  <!-- <suite-file path="XML/TC_003testng.xml"></suite-file>-->
+  
   
   </suite-files>
 </suite> <!-- Suite -->

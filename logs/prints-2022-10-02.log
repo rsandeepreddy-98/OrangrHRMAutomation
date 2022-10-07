@@ -1,0 +1,7 @@
+21:30:40.035 [main] INFO  com.OrangeHRM.Utilities.Listeners - Clicked on Login Button
+21:32:08.344 [main] INFO  com.OrangeHRM.Utilities.Listeners - ChromeDriver opened
+21:32:23.541 [main] INFO  com.OrangeHRM.Utilities.Listeners - Entered Username
+21:32:26.185 [main] INFO  com.OrangeHRM.Utilities.Listeners - Enter password
+21:32:26.263 [main] INFO  com.OrangeHRM.Utilities.Listeners - Clicked on Login Button
+21:33:23.910 [main] INFO  com.OrangeHRM.Utilities.Listeners - ChromeDriver opened
+21:33:38.885 [main] INFO  com.OrangeHRM.Utilities.Listeners - Entered Username

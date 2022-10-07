@@ -19,7 +19,7 @@ public class TC_002_DataProvider extends BaseClass {
 		logger.info("Entered Username");
 		loginPage.getPassword(password);
 		logger.info("Enter password");
-		loginPage.clickSubmit();
+		loginPage.clickLogin();
 		logger.info("Clicked on Login Button");
 		
 		

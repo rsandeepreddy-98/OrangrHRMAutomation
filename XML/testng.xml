@@ -11,18 +11,20 @@
     
       <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
       <methods>
-	  <include name="loginPageCheck"/>   
+	 
 	  <include name="addEmployee"/>      
+	  <include name="adminEmployeeStatus"/>
       </methods>
    </class> 
-   
-  
-   
-   <class name = "com.OrangeHRM.TestCases.TC_004_PIM_AddEmployee">
+    
+  <!-- <class name = "com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus">
    <methods>
-   <exclude name="addEmployee"/>
+   <include name="loginPageCheck"/> 
+   <include  name="checkEmployeeStatus"/>
    </methods>
-   </class>
+   </class>-->
+   
+   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

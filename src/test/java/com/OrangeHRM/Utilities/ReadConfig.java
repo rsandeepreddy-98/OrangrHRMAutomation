@@ -1,11 +1,10 @@
 package com.OrangeHRM.Utilities;
 
-import java.awt.RenderingHints.Key;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
+
 import java.util.Properties;
 
 public class ReadConfig {
@@ -62,6 +61,7 @@ public class ReadConfig {
 		String generalName = properties.getProperty("addName");
 		return generalName;
 	}
+	
 	
 	
 }

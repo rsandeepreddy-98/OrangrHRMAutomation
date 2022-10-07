@@ -12,24 +12,29 @@ public class TC_003_Admin_Job_EmployeeStatus extends BaseClass{
 
 	public AdminTab adminTab;
 	public 	LoginPage loginPage;
-	@Test
-	public void loginPageCheck() {
-
-		loginPage = new LoginPage(driver);
-		loginPage.getUserName(uName);
-		logger.info("Entered Username");
-		loginPage.getPassword(pwd);
-		logger.info("Enter password");
-		loginPage.clickSubmit();
-		logger.info("Clicked on Login Button");
-
-	}
+	
+	
 	
 	@Test
-	public void checkEmployeeStatus() {
+	public void adminEmployeeStatus() throws InterruptedException {
 		adminTab = new AdminTab(driver);
-		adminTab.getAdminElement();
+		Thread.sleep(2500);
+		adminTab.clickAdminElement();
+		Thread.sleep(2500);
 		adminTab.getJobElement();
+		Thread.sleep(2500);
 		adminTab.getEmployeeStatusElement();
+		Thread.sleep(2500);
+		adminTab.getaddButtonElement();
+		Thread.sleep(2500);
+		adminTab.getnameElement(readConfig.getGeneralName());
+		Thread.sleep(2500);
+		adminTab.getSaveButtonElement();
+		Thread.sleep(3000);
+		if (driver.getPageSource().contains("Already exists")) {
+			driver.navigate().back();
+		}
+		// adminTab.getcheckboxSelect();
+		// adminTab.getDeleteElement();
 	}
 }
