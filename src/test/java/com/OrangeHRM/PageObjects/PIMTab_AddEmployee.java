@@ -16,6 +16,12 @@ public class PIMTab_AddEmployee {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath = "//span[text()='PIM']")
+	private WebElement pimTab;
+	
+	public void pim_TabElement_click() {
+		pimTab.click();
+	}
 	
 	@FindBy(xpath = "//a[text()='Add Employee']")
 	WebElement addEmployeeButton;

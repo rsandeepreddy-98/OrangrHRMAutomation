@@ -5,8 +5,8 @@
     <classes>
       <class name="com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus">
    	<methods>
-     <include name="loginPageCheck"/>   
-   		<include name="checkEmployeeStatus"/>
+      
+   		<include name="adminEmployeeStatus"/>
    </methods>
    </class>
     </classes>

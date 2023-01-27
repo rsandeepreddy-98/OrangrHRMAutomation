@@ -1,29 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-07T14:32:47 IST" name="Suite" finished-at="2022-10-07T14:32:47 IST" duration-ms="0">
+  <suite started-at="2023-01-26T11:32:12 IST" name="Suite" finished-at="2023-01-26T11:32:12 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- Suite -->
-  <suite started-at="2022-10-07T14:32:00 IST" name="Suite (0)" finished-at="2022-10-07T14:32:46 IST" duration-ms="46822">
+  <suite started-at="2023-01-26T11:31:36 IST" name="Suite (0)" finished-at="2023-01-26T11:32:12 IST" duration-ms="35282">
     <groups>
     </groups>
-    <test started-at="2022-10-07T14:32:00 IST" name="LoginCheckTest" finished-at="2022-10-07T14:32:46 IST" duration-ms="46822">
-      <class name="com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@57c88764]" started-at="2022-10-07T14:32:00 IST" name="setUp" finished-at="2022-10-07T14:32:29 IST" duration-ms="29557" status="PASS">
+    <test started-at="2023-01-26T11:31:36 IST" name="Test" finished-at="2023-01-26T11:32:12 IST" duration-ms="35282">
+      <class name="com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@5e8a459]" started-at="2023-01-26T11:31:36 IST" name="setUp" finished-at="2023-01-26T11:32:07 IST" duration-ms="30845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployee()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@57c88764]" started-at="2022-10-07T14:32:29 IST" name="addEmployee" finished-at="2022-10-07T14:32:45 IST" duration-ms="15966" status="PASS">
+        <test-method signature="adminEmployeeStatus()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@5e8a459]" started-at="2023-01-26T11:32:07 IST" name="adminEmployeeStatus" finished-at="2023-01-26T11:32:10 IST" duration-ms="3062" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Admin1']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-RK4E0QFO', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6275561b90e7f4c585f67539bc4629ef, findElement {using=xpath, value=//span[text()='Admin1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55094/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6275561b90e7f4c585f67539bc4629ef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Admin1']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-RK4E0QFO', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6275561b90e7f4c585f67539bc4629ef, findElement {using=xpath, value=//span[text()='Admin1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\SANDEE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55094/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6275561b90e7f4c585f67539bc4629ef
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy32.click(Unknown Source)
+at com.OrangeHRM.PageObjects.AdminTab.clickAdminElement(AdminTab.java:31)
+at com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus.adminEmployeeStatus(TC_003_Admin_Job_EmployeeStatus.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM@57c88764]" started-at="2022-10-07T14:32:45 IST" name="teardown" finished-at="2022-10-07T14:32:46 IST" duration-ms="1243" status="PASS">
+        </test-method> <!-- adminEmployeeStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus@5e8a459]" started-at="2023-01-26T11:32:10 IST" name="teardown" finished-at="2023-01-26T11:32:12 IST" duration-ms="1297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM -->
-    </test> <!-- LoginCheckTest -->
+      </class> <!-- com.OrangeHRM.TestCases.TC_003_Admin_Job_EmployeeStatus -->
+    </test> <!-- Test -->
   </suite> <!-- Suite (0) -->
 </testng-results>

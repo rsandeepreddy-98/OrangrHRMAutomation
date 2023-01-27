@@ -1,31 +1,25 @@
 package com.OrangeHRM.TestCases;
 
-
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import org.testng.annotations.Test;
 
 import com.OrangeHRM.PageObjects.PIMTab_AddEmployee;
-import com.OrangeHRM.PageObjects.AdminTab;
-import com.OrangeHRM.PageObjects.LoginPage;
 import com.OrangeHRM.PageObjects.PersonalDetailsPage;
-
-import com.OrangeHRM.Utilities.ReadConfig;
+import com.OrangeHRM.Utilities.BaseClass;
 
 public class TC_0001_LoginCheckHRM extends BaseClass {
-	private static Logger logger = LogManager.getLogger(TC_0001_LoginCheckHRM.class);
-
-	public LoginPage loginPage;
-	public ReadConfig readConfig = new ReadConfig();
-	public AdminTab adminTab;
+	// private static Logger logger =
+	// LogManager.getLogger(TC_0001_LoginCheckHRM.class);
+	PIMTab_AddEmployee addEmployeePage;
 
 	@Test
 	public void addEmployee() throws InterruptedException {
-		PIMTab_AddEmployee addEmployeePage = new PIMTab_AddEmployee(driver); //
+		addEmployeePage = new PIMTab_AddEmployee(driver); //
+		Thread.sleep(2000);
+
+		addEmployeePage.pim_TabElement_click();
 		Thread.sleep(3000);
-		addEmployeePage.addEmployeeClick(); //
+
+		addEmployeePage.addEmployeeClick();
 		Thread.sleep(3000);
 		addEmployeePage.addFirstName(readConfig.getFirstName()); //
 		Thread.sleep(3000);
@@ -33,6 +27,7 @@ public class TC_0001_LoginCheckHRM extends BaseClass {
 		Thread.sleep(3000);
 		addEmployeePage.clickSaveButton();
 		Thread.sleep(2500);
+
 	}
 
 	@Test(dependsOnMethods = "addEmployee")
@@ -42,8 +37,5 @@ public class TC_0001_LoginCheckHRM extends BaseClass {
 		personalDetailsPage.genderElement();
 		personalDetailsPage.selectDropDown();
 	}
-
-	
-	
 
 }

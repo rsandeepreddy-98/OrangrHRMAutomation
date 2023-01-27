@@ -13,7 +13,7 @@
       <methods>
 	 
 	  <include name="addEmployee"/>      
-	  <include name="adminEmployeeStatus"/>
+	 
       </methods>
    </class> 
     

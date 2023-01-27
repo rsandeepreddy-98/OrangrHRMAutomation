@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.OrangeHRM.PageObjects.LoginPage;
+import com.OrangeHRM.Utilities.BaseClass;
 import com.OrangeHRM.Utilities.ExcelReader;
 
 public class TC_002_DataProvider extends BaseClass {

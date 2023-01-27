@@ -1,6 +1,0 @@
-19:45:24.563 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
-19:45:24.774 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
-19:45:27.138 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
-19:45:28.201 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Entered Username
-19:45:28.301 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Enter password
-19:45:30.434 [main] INFO  com.OrangeHRM.TestCases.TC_0001_LoginCheckHRM - Clicked on Login Button
